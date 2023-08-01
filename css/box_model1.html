@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 박스가 세로로 붙어서 나옴 */
+            border-top: 2px solid gray;
+            border-left: 2px solid gray;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .box1:active{
+            /* 클릭할 수 있게 만들 수 있다 */
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+
+        .box2{
+            /* 박스가 가로로 떨어져서 나옴 */
+            /* display: block; 을 해주면 세로로 나옴*/
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <button class="box2"></button>
+    <button class="box2"></button>
+    <button class="box2"></button>
+
+</body>
+</html>

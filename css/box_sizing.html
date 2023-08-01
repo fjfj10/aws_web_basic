@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* 모든 요소에 box-sizing 적용*/
+            box-sizing: border-box;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2{
+            /* 테두리를 1px를 해주어 총 102x102가 된다 -> 98로 해줘야 100x100이 됌
+            box-sizing: border-box로 자아주면 테두리까지 합한 값을 100으로 잡아준다*/
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <input type="text" name="username" placeholder="아이디입력" required
+            autofocus>
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="비밀번호입력" required>
+        </div>
+        <div>
+            <input type="text" name="name" value="김준일" disabled>
+            <!-- 둘다 수정금지 readonly는 데이터는 날아감 but disabled는 데이터 안날아감 -->
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="이메일입력">
+        </div>
+        <button type="submit">전송</button>
+        <div>
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <select name="product" id="">
+                <option value="a1">상품1</option>
+                <option value="a2">상품2</option>
+                <option value="a3">상품3</option>
+                <option value="a4">상품4</option>
+            </select>
+        </div>
+        <div>
+            <!-- 검색을 할때 input과 관련있는 것만 띄워줌 -->
+            <input type="text" list="user">
+            <datalist id="user">
+                <option value="u1">aaa1</option>
+                <option value="u2">aaa2</option>
+                <option value="u3">bbb1</option>
+                <option value="u4">bbb2</option>
+            </datalist>
+        </div>
+        <div>
+            <!-- 서버 또는 어딘가로 전송 -->
+            <button type="submit">전송</button>
+            <!-- '자신이 속한' form을 초기화 -->
+            <button type="reset">초기화</button>
+            <!-- 아무기능 없음 자바 같은걸로 기능 추가해 줘야함 -->
+            <button type="button">그냥버튼</button>
+        </div>
+    </form>
+    <form action="">
+        <div>
+            <!-- 초기화를 실행해도 삭제되지 X 다른 form이니까 -->
+            <input type="text">
+        </div>
+    </form>
+</body>
+</html>

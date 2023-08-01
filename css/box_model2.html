@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-box{
+            /* 박스사이간격 없애기 */
+            display: flex;
+        }
+
+        .box1{
+            display: inline-block;
+            /* 글자처럼 취급 */
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2{
+            display: inline-block;
+            /* display: block; */
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /* line-height: 100px;
+            word-spacing: 100px;     */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="box1">google</div>
+    <!-- a tag는 속성 안먹는다 = 
+        글자이기 때문에 글자에 관련된 속성만 먹음 
+        or display: block으로 바꿔준다 
+        box를 글자취급 하고싶을때는 display: inline-block-->
+    <a href="" class="box2">naver 이동</a>
+    </div>
+    
+</body>
+</html>

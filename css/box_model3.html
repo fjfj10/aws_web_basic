@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            box-sizing: border-box;
+            /* 순서 중요 margin-border-padding-contant*/
+            margin: 10px 20px;
+            border: 0px solid black;
+            /* border: 5px 3px 4px 2px solid black;는 안된다*/
+            border-width: 5px 3px 4px 2px;
+             /* padding-top: 5px;
+            padding-right: 20px;
+            padding-left: 20px; */
+            /* 시계방향: 위 오른쪽 아래 왼쪽
+            padding: 5px 10px 0px 20px;
+            padding: 5px 10px 20px;하면 오른쪽의 값을 가지고와 왼쪽에 적용
+            대칭으로 적용*/
+            padding: 5px 10px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">내용</div>
+</body>
+</html>
