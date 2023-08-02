@@ -50,3 +50,19 @@ const lodeBookList = () => {
     //     `;
     // }
 };
+
+const addBookOnClickHandle = () => {
+   //1. 객체 만들고
+    const book = {
+        //2. input한 값 가지고 와서
+        bookname: document.querySelector(".book-name").value,
+        author: document.querySelector(".author").valuel,
+        publisher: document.querySelector(".publisher").value
+    }
+    //3. 객체를 push 해준다
+    bookList.push(book);
+    // 추가된 list를 불러온다 -> 저장은 안됌 새로고침하면 날아감
+    lodeBookList();
+}
+
+
