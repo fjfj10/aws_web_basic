@@ -5,6 +5,8 @@ window.onload = () => {
     //     return n * 2;
     // }
     // const numbers2 = numbers.map(fx);
+    
+    //map에 함수를 바로 넣어 코드 줄이기
     const numbers2 = numbers.map((n) => {
         return n * 2;
     });
@@ -13,8 +15,9 @@ window.onload = () => {
     console.log(numbers2);
 
     console.log(userList);
-    //``를 이용하면 문자열 중 변수를 넣을 수 있다 출력값: username: aaa
+    //` ${} `를 이용하면 문자열 안에 변수를 넣을 수 있다 
     console.log(`username: ${userList[0].username}`);
+    // 출력값: username: aaa
     lodeUserList();
 }
 
@@ -52,6 +55,15 @@ const lodeUserList = () => {
 
     userListTbody.innerHTML = mapTest.join("");
     
+    //불필요한 변수 줄이기 가능
+    userListTbody.innerHTML = userList.map((user) => {
+        return`
+            <tr>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            </tr>
+        `
+    }).join("");
 
     
 };
